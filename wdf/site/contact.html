@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WeddingDealFinder — Find the Best Wedding Deals</title>
-<meta name="description" content="WeddingDealFinder — Find the best wedding deals, discounts, and coupons updated daily. Save on dresses, florals, invitations, registry, honeymoon, and more.">
+<title>Contact Us | WeddingDealFinder</title>
+<meta name="description" content="Get in touch with WeddingDealFinder — submit a deal, ask about advertising, or just say hello.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -911,10 +911,41 @@ footer {
   .newsletter { padding: 2rem 1.25rem; }
 }
 </style>
+
+.inner-hero { background: var(--sand-2); border-bottom: 1px solid var(--border); padding: 3.5rem 2.5rem 3rem; }
+.inner-hero h1 { font-family: 'Lora', serif; font-size: clamp(2rem,4vw,3rem); font-weight: 500; color: var(--bark); letter-spacing:-0.02em; margin-bottom: 0.5rem; }
+.inner-hero h1 em { font-style: italic; color: var(--clay); }
+.inner-hero p { font-size: 16px; color: var(--bark-2); font-weight: 300; max-width: 560px; }
+.inner-content { max-width: 860px; margin: 0 auto; padding: 3rem 2.5rem; }
+.inner-content h2 { font-family: 'Lora', serif; font-size: 1.4rem; font-weight: 500; color: var(--bark); margin: 2rem 0 0.75rem; }
+.inner-content p { font-size: 15px; color: var(--bark-2); line-height: 1.8; margin-bottom: 1rem; }
+.inner-content a { color: var(--clay); text-decoration: none; border-bottom: 1px solid var(--clay-mid); }
+.inner-content a:hover { color: var(--terracotta); }
+.inner-content ul { margin: 0 0 1rem 1.5rem; }
+.inner-content ul li { font-size: 15px; color: var(--bark-2); line-height: 1.8; margin-bottom: 0.35rem; }
+.contact-form { background: var(--sand); border: 1px solid var(--border-md); border-radius: var(--radius-lg); padding: 2rem; margin-top: 1.5rem; }
+.form-group { margin-bottom: 1.25rem; }
+.form-group label { display: block; font-size: 13px; font-weight: 600; color: var(--bark); margin-bottom: 6px; }
+.form-group input, .form-group select, .form-group textarea {
+  width: 100%; border: 1px solid var(--border-md); border-radius: var(--radius);
+  padding: 10px 14px; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 14px;
+  color: var(--bark); background: var(--cream); outline: none; transition: border-color 0.2s;
+}
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--clay); }
+.form-group textarea { resize: vertical; min-height: 120px; }
+.submit-btn {
+  background: var(--clay); color: var(--cream); border: none; border-radius: var(--radius);
+  padding: 12px 28px; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 14px;
+  font-weight: 600; cursor: pointer; transition: background 0.2s;
+}
+.submit-btn:hover { background: var(--terracotta); }
+.breadcrumb { font-size: 13px; color: var(--warm-gray); margin-bottom: 1.5rem; }
+.breadcrumb a { color: var(--clay); text-decoration: none; }
+.breadcrumb a:hover { color: var(--terracotta); }
+.breadcrumb span { margin: 0 6px; }
+
 </head>
 <body>
-
-<!-- NAV -->
 <nav>
   <a href="/" class="nav-logo">Wedding<em>DealFinder</em></a>
   <div class="nav-search">
@@ -929,120 +960,51 @@ footer {
   </ul>
 </nav>
 
-<!-- CATEGORY STRIP (VRBO style sticky tabs) -->
-<div class="cat-strip">
-  <div class="cat-strip-inner" id="catStrip">
-    <button class="cat-tab active" onclick="filterCat('all',this)"><span class="cat-tab-icon">✦</span>All deals</button>
-    <button class="cat-tab" onclick="filterCat('dress',this); scrollToDeals()"><span class="cat-tab-icon">👗</span>Dresses</button>
-    <button class="cat-tab" onclick="filterCat('photo',this); scrollToDeals()"><span class="cat-tab-icon">📷</span>Photography</button>
-    <button class="cat-tab" onclick="filterCat('florals',this); scrollToDeals()"><span class="cat-tab-icon">🌸</span>Florals</button>
-    <button class="cat-tab" onclick="filterCat('invites',this); scrollToDeals()"><span class="cat-tab-icon">✉️</span>Invitations</button>
-    <button class="cat-tab" onclick="filterCat('registry',this); scrollToDeals()"><span class="cat-tab-icon">🎁</span>Registry</button>
-    <button class="cat-tab" onclick="filterCat('honeymoon',this); scrollToDeals()"><span class="cat-tab-icon">✈️</span>Honeymoon</button>
-    <button class="cat-tab" onclick="filterCat('beauty',this); scrollToDeals()"><span class="cat-tab-icon">💄</span>Beauty</button>
-    <button class="cat-tab" onclick="filterCat('decor',this); scrollToDeals()"><span class="cat-tab-icon">🕯️</span>Décor</button>
-    <button class="cat-tab" onclick="filterCat('jewelry',this); scrollToDeals()"><span class="cat-tab-icon">💍</span>Jewelry</button>
-    <button class="cat-tab" onclick="filterCat('prints',this); scrollToDeals()"><span class="cat-tab-icon">🖨️</span>Prints</button>
+<div class="inner-hero">
+  <div style="max-width:860px;margin:0 auto">
+    <div class="breadcrumb"><a href="/">Home</a><span>›</span>Contact</div>
+    <h1><em>Get</em> in touch</h1>
+    <p>Submit a deal tip, ask about advertising, or just say hello.</p>
   </div>
 </div>
-
-<!-- HERO -->
-<div class="hero">
-  <div class="hero-eyebrow">Updated daily — verified deals</div>
-  <h1>Your dream wedding,<br><em>beautifully</em> within budget.</h1>
-  <p class="hero-sub">The easiest way to find wedding deals, coupons, and discounts — all in one place, updated every morning.</p>
-
-  <div class="hero-search-pill">
-    <div class="search-segment">
-      <span class="seg-label">What</span>
-      <input class="seg-input" type="text" placeholder="Dresses, florals, invitations…" id="heroSearch" oninput="syncSearch()">
+<div class="inner-content">
+  <p>We read every message and typically respond within 1–2 business days.</p>
+  <div class="contact-form">
+    <div class="form-group">
+      <label>Your name</label>
+      <input type="text" placeholder="Jane Smith">
     </div>
-    <div class="search-segment">
-      <span class="seg-label">Category</span>
-      <input class="seg-input" type="text" placeholder="All categories" readonly onclick="filterCat('all',null)">
+    <div class="form-group">
+      <label>Email address</label>
+      <input type="email" placeholder="jane@example.com">
     </div>
-    <button class="hero-search-btn" onclick="renderDeals(); document.getElementById('deals').scrollIntoView({behavior:'smooth'})">
-      <span class="search-icon"></span>
-      Find deals
-    </button>
+    <div class="form-group">
+      <label>Reason for contact</label>
+      <select>
+        <option value="">Select one...</option>
+        <option>Submit a deal or coupon</option>
+        <option>Advertising inquiry</option>
+        <option>Affiliate partnership</option>
+        <option>Report a broken deal</option>
+        <option>General question</option>
+        <option>Other</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Message</label>
+      <textarea placeholder="Tell us more..."></textarea>
+    </div>
+    <button class="submit-btn" onclick="handleSubmit()">Send message</button>
   </div>
 
-  <div class="hero-stats">
-    <div class="stat"><span class="stat-num" id="dealCount">—</span><span class="stat-label">Active deals</span></div>
-    <div class="stat"><span class="stat-num">12</span><span class="stat-label">Categories</span></div>
-    <div class="stat"><span class="stat-num" id="maxSaving">—</span><span class="stat-label">Max off today</span></div>
-    <div class="stat"><span class="stat-num">Free</span><span class="stat-label">Always free to use</span></div>
-  </div>
+  <h2>Other ways to reach us</h2>
+  <p>You can also reach us by email at <a href="mailto:hello@weddingdealfinder.com">hello@weddingdealfinder.com</a>. For deal submissions, include the store name, discount amount, coupon code (if any), and expiry date if known.</p>
 </div>
-
-<!-- PAGE CONTENT -->
-<div class="page">
-
-  <!-- FEATURED -->
-  <div class="featured-card">
-    <div>
-      <div class="feat-eyebrow">✦ Deal of the day</div>
-      <div class="feat-title">David's Bridal<br>Clearance Event</div>
-      <p class="feat-desc">Hundreds of gowns added to clearance. Limited sizes. Verified affiliate link — we earn a small commission at no extra cost to you.</p>
-      <div class="feat-actions">
-        <a href="/dresses" class="btn-clay">Shop the sale →</a>
-        <a href="/dresses" class="btn-ghost-light">View all dress deals</a>
-      </div>
-    </div>
-    <div class="feat-discount">60%</div>
-  </div>
-
-  <!-- TODAY'S DEALS -->
-  <div id="deals">
-    <div class="sec-head">
-      <div>
-        <div class="sec-title">Today's <em>best</em> deals</div>
-        <div class="sec-sub" id="updatedTag">Refreshed this morning</div>
-      </div>
-      <a href="/#deals" class="see-all">View all →</a>
-    </div>
-    <div class="deals-grid" id="dealsGrid"><div class="loading">Loading deals…</div></div>
-  </div>
-
-  <hr class="divider">
-
-  <!-- EXPIRING SOON -->
-  <div id="expiring">
-    <div class="sec-head">
-      <div>
-        <div class="sec-title">Expiring <em>soon</em></div>
-        <div class="sec-sub">Grab these before they're gone — ends within 48 hours</div>
-      </div>
-    </div>
-    <div class="expiring-strip" id="expiringStrip"><div class="loading">Loading…</div></div>
-  </div>
-
-  <hr class="divider">
-
-  <!-- NEWSLETTER -->
-  <div class="newsletter" id="newsletter">
-    <h2>Never miss a <em>wedding deal</em></h2>
-    <p>The week's best discounts delivered every Tuesday morning. Free, no spam, unsubscribe anytime.</p>
-    <div class="nl-form" id="nlForm">
-      <input type="email" placeholder="your@email.com" id="emailInput">
-      <button onclick="subscribe()">Subscribe free</button>
-    </div>
-  </div>
-
-  <!-- CATEGORIES -->
-  <div id="categories">
-    <div class="sec-head">
-      <div>
-        <div class="sec-title">Browse by <em>category</em></div>
-        <div class="sec-sub">Every part of your wedding, covered</div>
-      </div>
-    </div>
-    <div class="cat-cards" id="catCards"></div>
-  </div>
-
-</div>
-
-<!-- FOOTER -->
+<script>
+function handleSubmit(){
+  document.querySelector('.contact-form').innerHTML = '<p style="color:var(--sage-dark);font-size:16px;font-weight:600;padding:1rem 0">✓ Message sent! We'll get back to you within 1–2 business days.</p>';
+}
+</script>
 <footer>
   <div class="footer-inner">
     <div>
@@ -1077,155 +1039,5 @@ footer {
     <span>Some links earn us a commission. <a href="#">Learn more.</a></span>
   </div>
 </footer>
-
-<script>
-var allDeals = [], expiringDeals = [], currentCat = 'all';
-
-var CATS = [
-  {id:'dress',icon:'👗',name:'Dresses'},
-  {id:'photo',icon:'📷',name:'Photography'},
-  {id:'florals',icon:'🌸',name:'Florals'},
-  {id:'invites',icon:'✉️',name:'Invitations'},
-  {id:'registry',icon:'🎁',name:'Registry'},
-  {id:'honeymoon',icon:'✈️',name:'Honeymoon'},
-  {id:'beauty',icon:'💄',name:'Beauty'},
-  {id:'decor',icon:'🕯️',name:'Décor'},
-  {id:'catering',icon:'🍽️',name:'Catering'},
-  {id:'jewelry',icon:'💍',name:'Jewelry'},
-  {id:'prints',icon:'🖨️',name:'Prints'},
-  {id:'other',icon:'✦',name:'Other'},
-];
-
-var RATINGS = ['4.8','4.9','4.7','5.0','4.6','4.8','4.9','4.7'];
-
-function bClass(b){ return b==='hot'?'badge-hot':b==='new'?'badge-new':'badge-deal'; }
-function bLabel(b){ return b==='hot'?'🔥 Hot':b==='new'?'New':'Deal'; }
-
-function card(d, i){
-  var link = (d.link&&d.link!=='#')?d.link:'#';
-  var code = d.code ? '<div class="deal-code">Code: <code>'+d.code+'</code></div>' : '';
-  var rat = RATINGS[i % RATINGS.length];
-  return '<div class="deal-card">' +
-    '<div class="deal-photo">' +
-      '<div class="deal-photo-bg"></div>' +
-      '<div class="deal-photo-icon">'+(d.icon||'✦')+'</div>' +
-      '<div class="deal-photo-badge"><span class="badge '+bClass(d.badge)+'">'+bLabel(d.badge)+'</span>'+(d.expiring?'<span class="badge badge-expiry" style="margin-left:4px">Ends soon</span>':'')+'</div>' +
-      '<button class="deal-save-btn">♡</button>' +
-    '</div>' +
-    '<div class="deal-body">' +
-      '<div class="deal-top-row">' +
-        '<div class="deal-store">'+(d.store||'')+'</div>' +
-        '<div class="deal-rating">'+rat+'</div>' +
-      '</div>' +
-      '<div class="deal-title">'+(d.title||'')+'</div>' +
-      '<div class="deal-desc">'+(d.desc||'')+'</div>' +
-      code +
-      '<div class="deal-footer">' +
-        '<div class="deal-price-block">' +
-          '<span class="deal-saving">'+(d.discount||'')+'</span>' +
-          '<span class="deal-saving-label">Save today</span>' +
-        '</div>' +
-        '<a href="'+link+'" target="_blank" rel="noopener" class="deal-cta">Get deal</a>' +
-      '</div>' +
-    '</div>' +
-  '</div>';
-}
-
-function syncSearch(){
-  var v1 = document.getElementById('heroSearch').value;
-  var v2 = document.getElementById('navSearch').value;
-  var src = event&&event.target;
-  if(src&&src.id==='heroSearch') document.getElementById('navSearch').value = v1;
-  else document.getElementById('heroSearch').value = v2;
-  renderDeals();
-}
-
-function renderDeals(){
-  var q = (document.getElementById('heroSearch').value||'').toLowerCase();
-  var f = allDeals.filter(function(d){
-    return (currentCat==='all'||d.category===currentCat) &&
-           (!q||(d.title+' '+d.store+' '+d.desc).toLowerCase().includes(q));
-  });
-  var g = document.getElementById('dealsGrid');
-  if(!f.length){ g.innerHTML='<div class="empty"><strong>No deals found</strong>Try a different category or search.</div>'; return; }
-  g.innerHTML = f.map(card).join('');
-}
-
-function renderExpiring(){
-  var el = document.getElementById('expiringStrip');
-  if(!expiringDeals.length){ el.innerHTML='<div style="color:var(--warm-gray);font-size:13px;padding:1rem 0">No deals expiring soon right now.</div>'; return; }
-  el.innerHTML = expiringDeals.map(function(d){
-    return '<a href="'+(d.link||'#')+'" class="exp-card" target="_blank" rel="noopener">' +
-      '<div class="exp-icon-wrap">'+(d.icon||'✦')+'</div>' +
-      '<div class="exp-body"><div class="exp-store">'+(d.store||'')+'</div><div class="exp-title">'+(d.title||'')+'</div></div>' +
-      '<div class="exp-right"><span class="exp-saving">'+(d.discount||'')+'</span><span class="exp-timer">Ends soon</span></div>' +
-    '</a>';
-  }).join('');
-}
-
-function renderCatCards(){
-  var el = document.getElementById('catCards');
-  el.innerHTML = CATS.map(function(c){
-    var n = allDeals.filter(function(d){ return d.category===c.id; }).length;
-    return '<a href="#deals" class="cat-card" onclick="filterCat(\''+c.id+'\',null)">' +
-      '<span class="cat-card-icon">'+c.icon+'</span>' +
-      '<span class="cat-card-name">'+c.name+'</span>' +
-      '<span class="cat-card-count">'+n+' deal'+(n!==1?'s':'')+'</span>' +
-    '</a>';
-  }).join('');
-}
-
-function scrollToDeals(){
-  document.getElementById('deals').scrollIntoView({ behavior: 'smooth', block: 'start' });
-}
-
-function filterCat(cat, el){
-  currentCat = cat;
-  document.querySelectorAll('.cat-tab').forEach(function(t){ t.classList.remove('active'); });
-  if(el) el.classList.add('active');
-  renderDeals();
-}
-
-function subscribe(){
-  var inp = document.getElementById('emailInput');
-  if(inp.value&&inp.value.includes('@')){
-    document.getElementById('nlForm').innerHTML = '<p style="color:var(--sage-dark);font-weight:600;font-size:15px">You\'re in! First digest lands Tuesday. ✓</p>';
-  }
-}
-
-var DEMO = [
-  {store:'CVS',title:'Photo prints — 50% off any order',desc:'4×6, 5×7, and 8×10 prints. Perfect for save-the-dates and invites.',discount:'50% off',category:'prints',badge:'hot',expiring:false,icon:'🖨️',link:'#',code:'PRINT50'},
-  {store:'Zola',title:'Registry completion discount',desc:'20% off everything left on your registry after the wedding date.',discount:'20% off',category:'registry',badge:'new',expiring:false,icon:'🎁',link:'#',code:''},
-  {store:'Etsy',title:'Custom wedding invitations',desc:'Personalized stationery from thousands of independent sellers.',discount:'15% off',category:'invites',badge:'deal',expiring:false,icon:'✉️',link:'#',code:'ETSY15'},
-  {store:'Amazon',title:'Wedding décor bundles',desc:'Centerpieces, candles, and fairy lights. Fast Prime shipping.',discount:'Up to 40%',category:'decor',badge:'deal',expiring:false,icon:'🕯️',link:'#',code:''},
-  {store:'Shutterfly',title:'Photo books — buy one get one',desc:'Hardcover photo books for engagement or thank-you keepsakes.',discount:'BOGO',category:'prints',badge:'hot',expiring:true,icon:'📸',link:'#',code:'BOGO24'},
-  {store:'David\'s Bridal',title:'Bridesmaid dresses from $99',desc:'Mix and match colors. Over 200 styles in every size.',discount:'From $99',category:'dress',badge:'new',expiring:false,icon:'👗',link:'#',code:''},
-  {store:'1-800-Flowers',title:'Wedding florals — 25% off',desc:'Fresh centerpieces and bouquets for ceremony and reception.',discount:'25% off',category:'florals',badge:'deal',expiring:true,icon:'🌸',link:'#',code:'FLORAL25'},
-  {store:'Sephora',title:'Bridal beauty kits — 30% off',desc:'Full bridal makeup sets with foundation, primer, and setting spray.',discount:'30% off',category:'beauty',badge:'hot',expiring:false,icon:'💄',link:'#',code:'BRIDE30'},
-  {store:'Booking.com',title:'Honeymoon hotels — up to 35% off',desc:'Early booking discount on select properties. Free cancellation.',discount:'35% off',category:'honeymoon',badge:'new',expiring:false,icon:'✈️',link:'#',code:''},
-  {store:'Kay Jewelers',title:'Wedding bands — 30% off',desc:'Gold, platinum, and diamond options. Complimentary engraving.',discount:'30% off',category:'jewelry',badge:'deal',expiring:true,icon:'💍',link:'#',code:'BAND30'},
-  {store:'Minted',title:'Save-the-dates — 20% off',desc:'Foil-stamped and letterpress options. Design online in minutes.',discount:'20% off',category:'invites',badge:'new',expiring:false,icon:'✉️',link:'#',code:'MINT20'},
-  {store:'Anthropologie',title:'Bridal party gifts — 15% off',desc:'Robes, candles, and accessories for the whole party.',discount:'15% off',category:'dress',badge:'deal',expiring:false,icon:'🎁',link:'#',code:''},
-];
-
-fetch('deals.json')
-  .then(function(r){ return r.json(); })
-  .then(function(data){
-    allDeals = data.deals || [];
-    expiringDeals = data.expiring || [];
-    document.getElementById('dealCount').textContent = data.total || allDeals.length;
-    var max = Math.max.apply(null, allDeals.map(function(d){ var m=(d.discount||'').match(/(\d+)/); return m?+m[1]:0; }).concat([0]));
-    document.getElementById('maxSaving').textContent = max > 0 ? max+'%' : '—';
-    if(data.updated_at) document.getElementById('updatedTag').textContent = 'Last updated '+data.updated_at;
-    renderDeals(); renderExpiring(); renderCatCards();
-  })
-  .catch(function(){
-    allDeals = DEMO;
-    expiringDeals = DEMO.filter(function(d){ return d.expiring; });
-    document.getElementById('dealCount').textContent = DEMO.length;
-    document.getElementById('maxSaving').textContent = '50%';
-    renderDeals(); renderExpiring(); renderCatCards();
-  });
-</script>
 </body>
 </html>
